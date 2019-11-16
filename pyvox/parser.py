@@ -50,9 +50,20 @@ class Chunk(object):
                     offset += 4
 
             self.material = Material(_id, _type, weight, props)
-
-        else:
-            raise ParsingException('Unknown chunk type: %s'%self.id)
+        # elif id == b'nTRN':
+        #     print("Encountered " + 'nTRN' + "Don't know what to do with, ignoring")
+        # elif id == b'nGRP':
+        #     print("Encountered " + 'nGRP' + "Don't know what to do with, ignoring")
+        # elif id == b'nSHP':
+        #     print("Encountered " + 'nSHP' + "Don't know what to do with, ignoring")
+        # elif id == b'LAYR':
+        #     print("Encountered " + 'LAYR' + "Don't know what to do with, ignoring")
+        # elif id == b'MATL':
+        #     print("Encountered " + 'MATL' + "Don't know what to do with, ignoring")
+        # elif id == b'rOBJ':
+        #     print("Encountered " + 'rOBJ' + "Don't know what to do with, ignoring")
+        # else:
+        #     raise ParsingException('Unknown chunk type: %s'%self.id)
 
 class VoxParser(object):
 
@@ -109,9 +120,7 @@ class VoxParser(object):
             else:
                 palette = None
 
-            materials = [ c.material for c in chunks ]
-
-            return Vox(models, palette, materials)
+            return Vox(models, palette, [])
 
 
 
