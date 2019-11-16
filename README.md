@@ -1,14 +1,16 @@
-py-vox-io
-=========
+# Vox Slicer
 
-A Python parser and writer for the [Magica Voxel .vox
-format](https://github.com/ephtracy/voxel-model/blob/master/MagicaVoxel-file-format-vox.txt)
+## Note:
+Input vox file must be square and a multiple of the output slice size
 
-![sample1](https://raw.githubusercontent.com/gromgull/py-vox-io/master/samples/1.png)
-![sample2](https://raw.githubusercontent.com/gromgull/py-vox-io/master/samples/2.png)
+## Make sure to add the root of this project to the PYTHON_PATH
 
+`export PYTHONPATH="<path to where you saved this project>/py-vox-io/"`
 
-The base parser/writer has no dependencies.
+## Usage: 
+`python slicer.js <input filename> <output folder> <slice size>`
 
-The VOX model class has methods to convert to/from numpy arrays, these
-require numpy (duh) and pillow for image quantisation.
+## Example:
+`python slicer.py ./models/64x64x64.vox ./out 32`
+
+ - Sliced Vox files will be created in the ./out folder.
