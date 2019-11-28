@@ -3,6 +3,10 @@
 ## Note:
 Input vox file must be square and a multiple of the output slice size
 
+## Install Python 3
+
+See: https://realpython.com/installing-python/
+
 ## Make sure to add the root of this project to the PYTHON_PATH
 
 `export PYTHONPATH="<path to where you saved this project>/py-vox-io/"`
