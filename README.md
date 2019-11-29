@@ -1,5 +1,13 @@
 # Vox Slicer
 
+## Chrome Extension
+
+This is for recombining the sliced vox files and placing them into https://cryptovoxels.com
+
+### Cryptovoxels Generator
+
+https://chrome.google.com/webstore/detail/cryptovoxel-generator/kodjbgifejfaajgpjjddifagocboccab
+
 ## Note:
 Input vox file must be a perfect cube and the size must be a multiple of the output slice size.
 
