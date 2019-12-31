@@ -15,8 +15,23 @@ Input vox file must be a perfect cube and the size must be a multiple of the out
 
 See: https://realpython.com/installing-python/
 
+## Download the code to your machine
+
+Use the Download as Zip option by clicking the Green "Clone or Download" button to the top right.
+
 ## Make sure to add the root of this project to the PYTHON_PATH
 
+Copy the path where you saved the file to
+
+### Windows
+
+`SET PYTHONPATH="<path to where you saved this project>/py-vox-io/"`
+
+To verify PYTHONPATH is set run
+
+`echo %PYTHONPATH%`
+
+### MacOS
 `export PYTHONPATH="<path to where you saved this project>/py-vox-io/"`
 
 To verify PYTHONPATH is set run
