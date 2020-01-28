@@ -25,7 +25,7 @@ Copy the path where you saved the file to
 
 ### Windows
 
-`SET PYTHONPATH="<path to where you saved this project>/py-vox-io/"`
+`SET PYTHONPATH="<path to where you saved this project>\py-vox-io\"`
 
 To verify PYTHONPATH is set run
 
